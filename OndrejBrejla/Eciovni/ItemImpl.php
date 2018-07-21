@@ -2,7 +2,7 @@
 
 namespace OndrejBrejla\Eciovni;
 
-use Nette\Object;
+use Nette\SmartObject;
 
 /**
  * ItemImpl - part of Eciovni plugin for Nette Framework.
@@ -11,7 +11,10 @@ use Nette\Object;
  * @license    New BSD License
  * @link       http://github.com/OndrejBrejla/Eciovni
  */
-class ItemImpl extends Object implements Item {
+class ItemImpl implements Item
+{
+
+    use SmartObject;
 
     /** @var string */
     private $description;
